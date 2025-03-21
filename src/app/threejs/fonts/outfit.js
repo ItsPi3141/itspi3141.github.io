@@ -1,12 +1,4 @@
-import type { FontData } from "@react-three/drei";
-
-export const outfitJson:
-	| FontData
-	| {
-			glyphs: {
-				[k: string]: { ha: number; o: string; cachedOutline?: string[] };
-			};
-	  } = {
+export const outfitJson = {
 	glyphs: {
 		0: {
 			ha: 910,
