@@ -1,6 +1,12 @@
 "use client";
-import { Scroll, ScrollControls, Text } from "@react-three/drei";
+import {
+	type FontData,
+	Scroll,
+	ScrollControls,
+	Text3D,
+} from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { outfitJson } from "@/app/threejs/fonts/outfit";
 
 export default function Home() {
 	return (
@@ -14,7 +20,7 @@ export default function Home() {
 					}}
 				>
 					<Scroll>
-						<Text>ItsPi3141</Text>
+						<Text3D font={outfitJson as FontData}>ItsPi3141</Text3D>
 					</Scroll>
 				</ScrollControls>
 			</Canvas>
